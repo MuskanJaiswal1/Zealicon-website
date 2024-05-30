@@ -1,0 +1,9 @@
+version: "3"
+services:
+  frontend:
+    build: .
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - 4089:80
