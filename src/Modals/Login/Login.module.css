@@ -1,0 +1,178 @@
+.formCont {
+  max-width: 43rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.formCont .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.31rem;
+}
+.formCont h2 {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 2.4rem */
+  margin-bottom: 2.5rem;
+}
+.inputCont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.inputCont label {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.6rem */
+}
+.inputwrap {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  width: 24.3125rem;
+  height: 2.5rem;
+}
+.inputCont input {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0.5625rem;
+  font-size: 0.85rem;
+  border: none;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.25rem;
+  background: #3d5c60;
+  color: #fff;
+}
+.inputCont input::placeholder {
+  color: #fff;
+  opacity: 0.35;
+  font-family: "DM Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.4rem */
+}
+.btnwrap {
+  position: relative;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btnwrap button {
+  width: 24.3125rem;
+  height: 2.7rem;
+}
+.btnwrap button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: none;
+}
+.btnwrap button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+.btnwrap button img {
+  width: 100%;
+  height: 100%;
+}
+.btnwrap p {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.4rem */
+}
+.btnwrap p span{
+  display: inline;
+  color: #8eeef9;
+  font-family: "DM Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+/* 75 rem's */
+@media screen and (max-width: 1220px) {
+  .formCont {
+    max-width: 30rem;
+  }
+  .formCont h2 {
+    margin-bottom: 1.2525rem;
+  }
+  .inputwrap,
+  .btnwrap button {
+    width: 23rem;
+  }
+  .btnwrap {
+    margin-top: 2.5rem;
+  }
+}
+
+/* 61 rem'z */
+@media screen and (max-width: 990px) {
+  .formCont {
+    max-width: 24rem;
+  }
+
+  .formCont h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .innerCont label {
+    font-size: 0.85rem;
+  }
+  .inputwrap,
+  .btnwrap button {
+    width: 100%;
+    width: 20rem;
+  }
+  .inputCont input {
+    height: 2rem;
+  }
+  .inputCont input::placeholder {
+    font-size: 0.65rem;
+  }
+  .btnwrap {
+    margin-top: 2.25rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+  .formCont h2 {
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+  }
+  .formCont .form {
+    width: 100%;
+  }
+  .inputCont {
+    gap: 0.25rem;
+  }
+  .inputwrap,
+  .btnwrap button {
+    width: 100%;
+    min-width: 18rem;
+  }
+  .btnwrap {
+    margin-top: 2rem;
+  }
+}

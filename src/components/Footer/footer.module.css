@@ -1,0 +1,94 @@
+.footerCont {
+  display: flex;
+  padding: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  justify-content: space-between;
+}
+
+.footerCont section h2 {
+  color: var(--light-green);
+  font-family: rabu-kliwon;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infoSection nav {
+  margin: 0;
+  padding: 0;
+}
+
+.infoSection nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.infoSection ul li {
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s;
+  width: max-content;
+}
+
+.infoSection ul li:hover {
+  color: rgba(126, 242, 246, 0.8);
+}
+
+.infoCont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socialIconsCont {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.emailCont {
+  display: flex;
+  gap: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Map section ------------------------------------------- */
+
+.mapSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.mapSection img {
+  height: 100%;
+  max-width: 40rem;
+  min-width: 10rem;
+  width: 100%;
+}
+
+/* Tablet styling */
+@media screen and (max-width: 780px) {
+}
+
+/* Phone styling */
+@media screen and (max-width: 590px) {
+  .footerCont {
+    padding: 2rem;
+  }
+}

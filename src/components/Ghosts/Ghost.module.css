@@ -1,0 +1,71 @@
+.Ghost1 {
+  position: absolute;
+  top: 5rem;
+  left: 20%;
+  width: 12rem;
+  /*ANIMATION START*/
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /*ANIMATION END*/
+}
+
+.Ghost2 {
+  position: absolute;
+  top: 5rem;
+  right: 20%;
+  width: 10rem;
+  /*ANIMATION START*/
+  animation-name: floating;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /*ANIMATION END*/
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(5%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+/* Tablet styling */
+@media screen and (max-width: 1000px) {
+  .Ghost1 {
+    left: 15%;
+  }
+  .Ghost2 {
+    right: 15%;
+  }
+}
+
+/* Tablet styling */
+@media screen and (max-width: 780px) {
+  .Ghost1 {
+    width: 10rem;
+    left: 7%;
+    top: 7rem;
+  }
+  .Ghost2 {
+    width: 8rem;
+    right: 7%;
+    top: 7rem;
+  }
+}
+
+/* Phone styling */
+@media screen and (max-width: 590px) {
+  .Ghost1 {
+    width: 8rem;
+  }
+  .Ghost2 {
+    width: 6rem;
+  }
+}

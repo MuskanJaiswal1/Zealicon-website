@@ -1,0 +1,27 @@
+.otpInput {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  background: #3d5c60;
+  border: none;
+  color: #fff;
+}
+.otpInput::placeholder {
+    color: #fff;
+    opacity: 0.35;
+    font-family: "DM Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 1.4rem */
+  }
+.otpBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,29 @@
+.buttonCont {
+  position: relative;
+  font-family: rabu-kliwon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.buttonCont:hover {
+  opacity: 0.9;
+}
+
+
+
+.buttonCont p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+}

@@ -1,0 +1,43 @@
+/* Modal Section */
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  
+  .modalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    opacity: 1;
+    transition: all 2s ease;
+  }
+  
+  .modalContent {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1001;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modalScrollableContent {
+    max-height: 100vh; /* Set a maximum height for the scrollable content */
+    overflow-y: auto;
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 720px) {
+    .modalContent {
+      top: 0%;
+    }
+  }
