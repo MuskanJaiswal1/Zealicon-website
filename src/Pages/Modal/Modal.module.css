@@ -1,0 +1,141 @@
+.wrap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+.container {
+  position: relative;
+  max-width: 75rem;
+  width: 100%;
+  height: 100%;
+  max-height: 43rem;
+  border-radius: 0.625rem;
+  background: rgba(16, 16, 16, 0.66);
+  box-shadow: 0px 4px 100px 0px rgba(142, 191, 249, 0.2);
+  backdrop-filter: blur(100px);
+}
+.cross {
+  position: absolute;
+  width: 1.85rem;
+  height: 1.85rem;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: none;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 100;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.innerCont {
+  max-width: 75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: transparent;
+  padding: 4.5rem 5.5rem;
+  overflow: hidden;
+}
+.imgCont {
+  position: relative;
+  width: 33rem;
+  height: 33rem;
+  width: 100%;
+  height: 100%;
+}
+.imgCont .t {
+  position: absolute;
+  top: 12%;
+  right: 25%;
+}
+.imgCont .total {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.imgCont .ellipse {
+  position: relative;
+  transform: scale(1.4);
+  border-radius: 10%;
+}
+.wrapPayment {
+  display: flex;
+  width: 100%;
+  background: rgba(179, 226, 37, 0.12);
+  height: 2.5625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.wrapPayment span {
+  color: #53ffa2;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 2.4rem */
+}
+
+/* 75 rem's */
+@media screen and (max-width: 1220px) {
+  .innerCont {
+    gap: 5.6rem;
+  }
+  .imgCont {
+    max-width: 26.5rem;
+    max-height: 26.5rem;
+  }
+  .imgCont .t {
+    width: 7rem;
+    height: 7rem;
+    top: 10%;
+    right: 22%;
+  }
+}
+
+/* 61 rem'z */
+@media screen and (max-width: 990px) {
+  .innerCont {
+    width: 100%;
+    gap: 4rem;
+    padding: 2.5rem 3.5rem;
+  }
+  .imgCont {
+    max-width: 24rem;
+    max-height: 24rem;
+  }
+  .imgCont .t{
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+  .innerCont {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+  }
+  .container {
+    max-height: 60rem;
+  }
+  .wrapPayment span {
+    font-size: 1rem;
+  }
+  .imgCont .t{
+    right: 20%;
+    top: 8%;
+  }
+  .imgCont .ellipse {
+    transform: scale(1.35);
+  }
+}

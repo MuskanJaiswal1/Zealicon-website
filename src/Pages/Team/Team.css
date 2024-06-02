@@ -1,0 +1,93 @@
+
+.pp,
+.pp img {
+    height: 330px;
+    width: 330px;
+}
+.imgsec{
+    height: 300px;
+}
+
+.imgsec img{
+    height: 350px;
+    width: 390px;
+}
+.leftframe,
+.rightframe {
+    height: 40%;
+    /* width: 50%; */
+    /* transform: matrix(-0.98, -0.22, -0.22, 0.98, 0, 0); */
+}
+
+.team img {
+    height: 300px
+}
+
+.rightframe {
+    position: absolute;
+    right: 0vw;
+}
+
+.frame img {
+    position: absolute;
+    /* top: 340px; */
+    top: 20vh;
+}
+
+.topteam {
+  
+    /* background-image: url("./home_bg.jpg"); */
+  
+    /* height: 650px;
+    /* background-color:  #22849c; */
+}
+
+
+.main {
+    /* background: url("../../../public/assets/images/LandingBack.png"); */
+    background-color: black;
+    background:url("../Home/images/dark_bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 100vw;
+    background-size: auto calc(100%/5) ;
+    min-height: 100vh;
+}
+
+
+.cards11 {
+    /* background: url("../../../public/assets/images/LandingBack.png");
+    background-color: black;
+    min-height: 100vh; */
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    /* overflow: hidden; */
+}
+
+.main {
+    /* background: url("../../../public/assets/images/LandingBack.png"); */
+    background-color: black;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .topteam {
+        /* background-image: url("../../assets/images/finalbg.png"); */
+        /* background-image: url("../Home/images/dark_bg.jpg"); */
+        /* background-image: url("./home_phone_bg.jpg"); */
+        /* background-size: cover; */
+        /* height: 650px; */
+      }
+}
+@media screen and (max-width: 768px) {
+    .topteam {
+        /* background-image: url("../../assets/images/finalbg.png"); */
+        /* background-image: url("../Home/images/dark_bg.jpg"); */
+        /* background-image: url("./home_phone_bg.jpg"); */
+        /* background-size: cover; */
+        /* height: 650px; */
+      }
+
+    .main {
+        background-position:top ;
+    }
+}

@@ -1,0 +1,157 @@
+.leftFrame,
+.rightFrame {
+  height: 40%;
+  /* width: 50%; */
+  /* transform: matrix(-0.98, -0.22, -0.22, 0.98, 0, 0); */
+}
+
+.land {
+  /* background-image: url("../../assets/images/finalbg.png"); */
+  /* background-image: url("../Home/images/dark_bg.jpg"); */
+  background-size: cover;
+  height: 500px;
+}
+
+.rightFrame {
+  position: absolute;
+  right: 0vw;
+}
+
+.event {
+  height: 60vh;
+  width: 100vw;
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+.frame img {
+  position: absolute;
+  /* top: 340px; */
+  top: 20vh;
+}
+
+.my-card-media {
+  height: 400px;
+  width: 300px !important;
+}
+
+.eventname {
+  font-weight: 1000;
+}
+
+.content {
+  height: 93px !important;
+}
+
+/* .xyz {
+  width: 300px !important;
+} */
+
+.Zeal-bg {
+  /* background: url("../../../public/assets/images/LandingBack.png"); */
+  background-image: url("home_bg.jpg");
+  background-color: black;
+  min-height: 100vh;
+}
+
+.data {
+  width: fit-content;
+}
+/* 
+.events23 {
+   flex-wrap: wrap;
+  padding-bottom: 2rem; 
+} */
+
+.container {
+  margin: auto;
+}
+
+.active {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .frame {
+    display: none;
+  }
+
+  .event {
+    padding-top: 7rem;
+  }
+
+  .events23 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 4 00px;
+    margin-top: 2rem;
+    padding-right: 20px;
+  }
+
+  .daybtn {
+    /* display: none; */
+    /* width: 100px; */
+    /* width: 70px; */
+  }
+
+  .btns {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding-left: 0px; */
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .input {
+    width: 250px;
+  }
+
+  .zealcard {
+    width: fit-content;
+    width: 250px;
+  }
+
+  .my-card-media {
+    height: 200px;
+    width: 300px !important;
+  }
+
+  .myevents {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
